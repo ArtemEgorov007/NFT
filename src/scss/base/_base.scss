@@ -1,0 +1,28 @@
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 100%;
+
+	@include big-desktop {
+		font-size: 96.25%;
+	}
+
+	@include tablet {
+		font-size: 90%;
+	}
+
+	@include mobile {
+		font-size: 80%;
+	}
+
+	@include mini-mobile {
+		font-size: 70%;
+	}
+}

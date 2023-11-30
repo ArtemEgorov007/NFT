@@ -1,0 +1,85 @@
+.section-training {
+	&__container {
+		position: relative;
+		padding-top: 5rem;
+		border-radius: 1.25rem;
+		background: url("../img/main/background-header.png") center / cover no-repeat;
+	}
+
+	&__content {
+		position: relative;
+		z-index: 1;
+		max-width: 40.6rem;
+		padding-bottom: 8rem;
+		@include mobile {
+			max-width: 20.6rem;
+		}
+	}
+
+	&__title {
+		max-width: 35rem;
+		margin: 0 auto;
+		margin-bottom: 2rem;
+		color: $color-white;
+		text-align: center;
+		font-size: $font-size-paragraph-h3;
+		font-weight: 600;
+		line-height: 130%;
+	}
+
+	&__purple {
+		position: absolute;
+		width: 11.8%;
+		left: 82%;
+		top: -8%;
+		@include mobile {
+			top: 0;
+		}
+	}
+
+	&__blue {
+		position: absolute;
+		width: 7.7%;
+		left: 9%;
+		top: 11%;
+	}
+
+	&__muddy {
+		position: absolute;
+		width: 10.7%;
+		left: 83%;
+		top: 80%;
+		@include mobile {
+			top: 95%;
+		}
+	}
+
+	&__top {
+		position: absolute;
+		width: 31.2%;
+		left: 68%;
+		top: 1%;
+        z-index: 1;
+	}
+
+	&__bottom {
+		position: absolute;
+		width: 31.2%;
+		top: 59%;
+		left: 1%;
+
+		@include tablet {
+			display: none;
+		}
+	}
+}
+
+.grid-card {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(18.7rem, 1fr));
+	gap: 3rem;
+	justify-items: center;
+	align-items: center;
+	transition: grid-template-columns 0.3s;
+	margin: 0 auto;
+}

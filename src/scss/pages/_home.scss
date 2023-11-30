@@ -1,0 +1,27 @@
+.section-publicity {
+	padding-top: 18rem;
+	min-height: 64.3rem;
+	margin-bottom: 12rem;
+	background: url("../img/main/background-header.png") center / cover no-repeat;
+
+	@include tablet {
+		margin-bottom: 13rem;
+	}
+
+	@include mobile {
+		margin-bottom: 2 0rem;
+	}
+}
+
+.section-training {
+	padding-top: 5rem;
+	min-height: 63rem;
+	margin-bottom: 15rem;
+	@include tablet {
+		margin-bottom: 13rem;
+	}
+
+	@include mobile {
+		margin-bottom: 20rem;
+	}
+}

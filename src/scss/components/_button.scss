@@ -1,0 +1,146 @@
+.btn {
+	&,
+	&:link,
+	&:visited {
+		border-radius: 1.25rem;
+		box-shadow: $box-shadow;
+		background: $color-gr;
+		transition: all 0.2s;
+		display: inline-flex;
+		padding: 1.25rem 1.85rem;
+		justify-content: center;
+		align-items: center;
+		gap: 0.65rem;
+		position: relative;
+		font-size: 1.25rem;
+		border: none;
+		color: $button-text;
+		text-align: center;
+		font-family: "GT Walsheim Pro";
+		font-style: normal;
+		font-weight: 500;
+		animation: BtnToUp 0.4s ease-out 0.7s;
+		animation-fill-mode: backwards;
+		line-height: 130%;
+		@include tablet {
+			font-size: 1.8rem;
+			padding: 1.5rem 3.7rem;
+		}
+
+		@include mobile {
+			padding: 2rem 5rem;
+			font-size: 1.2rem;
+		}
+	}
+
+	&:hover {
+		transform: translateY(-0.1rem);
+
+		&::after {
+			transform: scaleX(1) scaleY(1);
+		}
+	}
+
+	&:active {
+		transform: translateY(-0.3rem);
+		box-shadow: $box-shadow-active inset;
+	}
+
+	&::after {
+		content: "";
+		background: $color-gr;
+		filter: blur(19.5px);
+		width: 100%;
+		height: 100%;
+		border-radius: 5rem;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: all 0.2s;
+	}
+}
+
+.btn__disabled {
+	&,
+	&:link,
+	&:visited {
+		border-radius: 1.25rem;
+		box-shadow: $box-shadow;
+		background: $color-gr;
+		display: inline-flex;
+		padding: 1.25rem 1.85rem;
+		justify-content: center;
+		align-items: center;
+		gap: 0.65rem;
+		font-size: 1.25rem;
+		border: none;
+		color: $button-disabled;
+		text-align: center;
+		font-family: "GT Walsheim Pro";
+		font-style: normal;
+		font-weight: 500;
+	}
+}
+
+.btn-modal {
+	&,
+	&:link,
+	&:visited {
+		border-radius: 1.25rem;
+		box-shadow: $box-shadow;
+		background: $color-gr;
+		transition: all 0.2s;
+		display: inline-flex;
+		padding: 1.25rem 1.85rem;
+		justify-content: center;
+		align-items: center;
+		gap: 0.65rem;
+		position: relative;
+		font-size: 1.25rem;
+		border: none;
+		color: $button-text;
+		text-align: center;
+		font-family: "GT Walsheim Pro";
+		font-style: normal;
+		font-weight: 500;
+		line-height: 130%;
+		@include tablet {
+			font-size: 1.8rem;
+			padding: 1.5rem 3.7rem;
+		}
+
+		@include mobile {
+			padding: 2rem 5rem;
+		}
+	}
+
+	&:hover {
+		transform: translateY(-0.1rem);
+
+		&::after {
+			transform: scaleX(1) scaleY(1);
+		}
+	}
+
+	&:active {
+		transform: translateY(-0.3rem);
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35) inset;
+	}
+
+	&::after {
+		content: "";
+		background: $color-gr;
+		filter: blur(19.5px);
+		width: 100%;
+		height: 100%;
+		border-radius: 5rem;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: all 0.2s;
+	}
+}

@@ -1,0 +1,128 @@
+.section-publicity {
+	&__container {
+		flex-wrap: wrap;
+		@include tablet {
+			justify-content: center;
+			margin: 0 auto;
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	&__content {
+		position: relative;
+		z-index: 10;
+	}
+
+	&__ellipse {
+		position: absolute;
+		width: 5rem;
+		top: -2rem;
+		left: 31rem;
+		@include tablet {
+			display: none;
+		}
+	}
+
+	&__title {
+		color: $color-white;
+		font-size: $font-size-paragraph-h1;
+		line-height: 105%;
+		letter-spacing: -2.16px;
+		max-width: 44.8rem;
+		@include mobile {
+			font-size: 3rem;
+		}
+	}
+
+	&__text {
+		color: $color-header;
+		font-size: $font-size-paragraph;
+		font-style: normal;
+		margin-bottom: 4rem;
+	}
+
+	&__text-highlight {
+		font-weight: 700;
+	}
+
+	&__background {
+		display: none;
+		@include tablet {
+			display: block;
+			position: absolute;
+			left: 8rem;
+			z-index: -1;
+			width: 29rem;
+		}
+		@include mobile {
+			display: none;
+		}
+		@include mini-mobile {
+			display: none;
+		}
+	}
+
+	&__composition {
+		display: none;
+		@include tablet {
+			display: block;
+		}
+	}
+}
+
+.section-businessman {
+	position: relative;
+
+	&__background {
+		width: 29rem;
+		@include tablet {
+			display: none;
+		}
+	}
+
+	&__composition {
+		position: absolute;
+		right: 1rem;
+		animation: jump 10s linear infinite;
+		z-index: 1;
+		@include tablet {
+			display: none;
+		}
+	}
+
+	&__pig {
+		position: absolute;
+		width: 8.7rem;
+		width: 8.7rem;
+		left: 1rem;
+		top: 6rem;
+	}
+
+	&__money {
+		position: absolute;
+		width: 12rem;
+		left: 18rem;
+		top: 10rem;
+		animation: jump 5s linear infinite;
+		z-index: 1;
+	}
+
+	&__top {
+		position: absolute;
+		width: 3.6rem;
+	}
+
+	&__bottom {
+		position: absolute;
+		width: 2rem;
+		top: 23rem;
+		left: -4rem;
+	}
+
+	&__emoji {
+		position: absolute;
+		width: 3.2rem;
+		left: 1rem;
+	}
+}
