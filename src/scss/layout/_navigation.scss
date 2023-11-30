@@ -9,12 +9,11 @@
 		}
 
 		&__button {
-			height: 8rem;
-			width: 8rem;
-			border-radius: 50%;
+			height: 3rem;
+			width: 3rem;
 			position: fixed;
-			top: 4rem;
-			right: 1rem;
+			top: 2.5rem;
+			right: 2rem;
 			z-index: 200;
 			text-align: center;
 			cursor: pointer;
@@ -40,7 +39,7 @@
 		}
 
 		&__nav {
-			height: 50vh;
+			min-height: 33rem;
 			position: fixed;
 			border-radius: 0px 0px 0px 30px;
 			background: $color-background-navigation;
@@ -105,20 +104,14 @@
 			}
 
 			&::before {
-				top: -0.4rem;
+				top: 1rem;
+				left: -1.5rem;
 			}
 
 			&::after {
-				top: 0.8rem;
+				top: 1.8rem;
+				left: -1.5rem;
 			}
-		}
-
-		&__button:hover &__icon::before {
-			top: -1rem;
-		}
-
-		&__button:hover &__icon::after {
-			top: 1rem;
 		}
 
 		&__toggle:checked + &__button &__icon {
@@ -126,12 +119,12 @@
 		}
 
 		&__toggle:checked + &__button &__icon::before {
-			top: 0;
+			top: 1rem;
 			transform: rotate(135deg);
 		}
 
 		&__toggle:checked + &__button &__icon::after {
-			top: 0;
+			top: 1rem;
 			transform: rotate(-135deg);
 		}
 	}
