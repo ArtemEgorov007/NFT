@@ -373,65 +373,22 @@ body {
   }
 }
 .section-publicity__composition {
-  display: none;
+  position: absolute;
+  top: -20%;
+  left: 40%;
 }
 @media (max-width: 1173px) {
   .section-publicity__composition {
+    display: none;
+  }
+}
+.section-publicity__composition-main {
+  display: none;
+}
+@media (max-width: 1173px) {
+  .section-publicity__composition-main {
     display: block;
   }
-}
-
-.section-businessman {
-  position: relative;
-}
-.section-businessman__background {
-  width: 29rem;
-}
-@media (max-width: 1173px) {
-  .section-businessman__background {
-    display: none;
-  }
-}
-.section-businessman__composition {
-  position: absolute;
-  right: 1rem;
-  animation: jump 10s linear infinite;
-  z-index: 1;
-}
-@media (max-width: 1173px) {
-  .section-businessman__composition {
-    display: none;
-  }
-}
-.section-businessman__pig {
-  position: absolute;
-  width: 8.7rem;
-  width: 8.7rem;
-  left: 1rem;
-  top: 6rem;
-}
-.section-businessman__money {
-  position: absolute;
-  width: 12rem;
-  left: 18rem;
-  top: 10rem;
-  animation: jump 5s linear infinite;
-  z-index: 1;
-}
-.section-businessman__top {
-  position: absolute;
-  width: 3.6rem;
-}
-.section-businessman__bottom {
-  position: absolute;
-  width: 2rem;
-  top: 23rem;
-  left: -4rem;
-}
-.section-businessman__emoji {
-  position: absolute;
-  width: 3.2rem;
-  left: 1rem;
 }
 
 .section-training__container {

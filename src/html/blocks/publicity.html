@@ -1,24 +1,16 @@
 <section id="publicity" class="section-publicity">
 	<div class="section-publicity__container container flex">
 		<div class="section-publicity__content">
-			<img src="./img/main/ellipse-green.png" alt="green" class="section-publicity__ellipse" />
-
 			<h1 class="section-publicity__title margin-bottom-20px">
 				Не упусти возможность войти <br />
 				в <span class="section-publicity__text-highlight">прибыльную нишу</span>
 			</h1>
 
-			<img src="./img/main/ellipse-businessman.png" alt="ellipse" class="section-publicity__background" />
-
-			<img
-				src="img/main/businessman.png"
-				srcset="img/main/businessman.png 954w, img/main/man-small.png 320w"
-				sizes="(max-width: 1240px) 23vw,
-                                    (max-width: 900px) 43vw
-                                    (max-width: 600px) 47vw, 300px"
-				alt="businessman"
-				class="section-publicity__composition"
-			/>
+			<picture class="section-publicity__composition-main">
+				<source media="(max-width: 500px)" srcset="img/main/man-small.png" />
+				<source srcset="img/main/man-small.png" />
+				<img src="img/main/man-small.png" alt="Адаптивное изображение" />
+			</picture>
 
 			<p class="section-publicity__text">
 				Получи все нужные навыки для заработка <br />
@@ -29,25 +21,10 @@
 			@@include('../components/modal.html')
 		</div>
 
-		<div class="section-businessman">
-			<div class="section-businessman__content">
-				<img src="./img/main/ellipse-businessman.png" alt="ellipse" class="section-businessman__background" />
-
-				<img
-					src="./img/main/businessman.png"
-					srcset="./img/main/businessman.png 954w, ./img/main/man-small.png 320w"
-					sizes="(max-width: 1240px) 23vw,
-                           (max-width: 900px) 43vw"
-					alt="businessman"
-					class="section-businessman__composition"
-				/>
-
-				<img src="img/main/pig.png" alt="pig" class="section-businessman__pig" />
-				<img src="img/main/money.png" alt="moneu" class="section-businessman__money" />
-				<img src="img/main/lightning-top.png" alt="lightning" class="section-businessman__top" />
-				<img src="img/main/lightning-bottom.png" alt="lightning" class="section-businessman__bottom" />
-				<img src="img/main/emoji.png" alt="emoji" class="section-businessman__emoji" />
-			</div>
-		</div>
+		<picture class="section-publicity__composition">
+			<source media="(max-width: 1000px)" srcset="img/main/man-full.png" />
+			<source srcset="img/main/man-full.png" />
+			<img src="img/main/man-full.png" alt="Адаптивное изображение" />
+		</picture>
 	</div>
 </section>

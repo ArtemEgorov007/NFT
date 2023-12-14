@@ -64,65 +64,18 @@
 	}
 
 	&__composition {
-		display: none;
-		@include tablet {
-			display: block;
-		}
-	}
-}
-
-.section-businessman {
-	position: relative;
-
-	&__background {
-		width: 29rem;
+		position: absolute;
+		top: -20%;
+		left: 40%;
 		@include tablet {
 			display: none;
 		}
-	}
 
-	&__composition {
-		position: absolute;
-		right: 1rem;
-		animation: jump 10s linear infinite;
-		z-index: 1;
-		@include tablet {
+		&-main {
 			display: none;
+			@include tablet {
+				display: block;
+			}
 		}
-	}
-
-	&__pig {
-		position: absolute;
-		width: 8.7rem;
-		width: 8.7rem;
-		left: 1rem;
-		top: 6rem;
-	}
-
-	&__money {
-		position: absolute;
-		width: 12rem;
-		left: 18rem;
-		top: 10rem;
-		animation: jump 5s linear infinite;
-		z-index: 1;
-	}
-
-	&__top {
-		position: absolute;
-		width: 3.6rem;
-	}
-
-	&__bottom {
-		position: absolute;
-		width: 2rem;
-		top: 23rem;
-		left: -4rem;
-	}
-
-	&__emoji {
-		position: absolute;
-		width: 3.2rem;
-		left: 1rem;
 	}
 }
