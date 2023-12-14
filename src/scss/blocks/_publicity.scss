@@ -31,7 +31,8 @@
 		letter-spacing: -2.16px;
 		max-width: 44.8rem;
 		@include mobile {
-			font-size: 3rem;
+			letter-spacing: -0.75px;
+			font-size: 2rem;
 		}
 	}
 
@@ -40,6 +41,7 @@
 		font-size: $font-size-paragraph;
 		font-style: normal;
 		margin-bottom: 4rem;
+		line-height: 120%;
 	}
 
 	&__text-highlight {

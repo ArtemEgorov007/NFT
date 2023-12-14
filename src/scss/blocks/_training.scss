@@ -59,7 +59,7 @@
 		width: 31.2%;
 		left: 68%;
 		top: 1%;
-        z-index: 1;
+		z-index: 1;
 	}
 
 	&__bottom {
@@ -82,4 +82,16 @@
 	align-items: center;
 	transition: grid-template-columns 0.3s;
 	margin: 0 auto;
+}
+
+.reveal {
+	position: relative;
+	transform: translateY(150px);
+	opacity: 0;
+	transition: 2s all ease;
+}
+
+.reveal.active {
+	transform: translateY(0);
+	opacity: 1;
 }

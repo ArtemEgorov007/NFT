@@ -29,22 +29,24 @@
 				</a>
 			</div>
 
-			<div class="navigation">
-	<input type="checkbox" class="navigation__toggle" id="navin-toggle" />
-	<label for="navin-toggle" class="navigation__button">
-		<span class="navigation__icon"></span>
-	</label>
+			
+			<div id="mobileNavOverlay" class="mobile-nav-overlay"></div>
 
-	<div class="navigation__background"></div>
+<div id="modalOpen" class="menu-icon">
+	<input id="yourCheckboxId" class="menu-icon__cheeckbox" type="checkbox" />
+	<div>
+		<span></span>
+		<span></span>
+	</div>
+</div>
 
-	<nav class="navigation__nav">
-		<ul class="navigation__list">
-			<li class="navigation__item"><a href="#publicity" class="navigation__link margin-bottom-20px">Главная</a></li>
-			<li class="navigation__item"><a href="#training" class="navigation__link margin-bottom-20px">Что даст обучение</a></li>
+<div class="mobile-nav" id="mobileNav">
+	<ul class="mobile-nav__list">
+		<li><a href="#publicity" class="active">Главная</a></li>
+		<li><a href="#training">Что даст обучение</a></li>
+	</ul>
 
-			<li class="navigation__item"><a href="#" class="navigation__login margin-top-30px btn-text">Личный кабинет</a></li>
-		</ul>
-	</nav>
+	<a href="#!" class="btn-text">Личный кабинет</a>
 </div>
 
 
@@ -82,7 +84,7 @@
 				на NFT всего за 28 дней!
 			</p>
 
-			<button class="section-publicity__button margin-bottom-30px btn" onclick="window.dialog.showModal();">Начать зарабатывать на NFT</button>
+			<!-- <button class="section-publicity__button margin-bottom-30px btn" onclick="window.dialog.showModal();">Начать зарабатывать на NFT</button>
 			<dialog class="modal" id="dialog">
 	<h2 class="modal__title margin-bottom-20px">Начни прямо сейчас!</h2>
 
@@ -101,6 +103,31 @@
 		<img src="./img/icons/close.svg" alt="exit" class="modal__icon" />
 	</button>
 </dialog>
+ -->
+
+			<!-- Кнопка для открытия модального окна -->
+<button id="openModalBtn" class="btn btn_open-modal">Начать зарабатывать на NFT</button>
+
+<!-- Контейнер модального окна -->
+<div id="modalContainer" class="modal-container">
+	<!-- Содержимое модального окна -->
+	<div class="modal-content">
+		<img id="closeModalBtn" src="./img/icons/close.svg" alt="exit" class="modal-content__icon" />
+		<img src="img/main/background-modal.png" alt="background" class="modal-content__background" />
+
+		<h2 class="modal-content__title">Начни прямо сейчас!</h2>
+
+		<p class="modal-content__text">
+			Получи все нужные навыки для заработка <br />
+			на NFT всего за 28 дней!
+		</p>
+
+		<input type="email" autocomplete="off" class="modal-content__input" />
+
+		<!-- Кнопка для закрытия модального окна -->
+		<button class="btn-modal closeModalBtn modal-content__button">Оплатить</button>
+	</div>
+</div>
 
 		</div>
 
@@ -114,7 +141,7 @@
 
 
 			<!-- Обучение -->
-			<section id="training" class="section-training">
+			<section id="training" class="section-training reveal">
 	<div class="section-training__container container">
 		<img src="./img/main/ellipse-top.png" alt="background" class="section-training__top" />
 		<img src="./img/main/ellipse-bottom.png" alt="background" class="section-training__bottom" />
