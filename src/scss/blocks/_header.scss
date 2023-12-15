@@ -24,6 +24,12 @@
 			left: 2rem;
 		}
 	}
+
+	@include mobile {
+		img {
+			width: 70%;
+		}
+	}
 }
 
 .nav {

@@ -12,6 +12,7 @@
 @import "./base/animation";
 
 /* Blocks */
+@import "./blocks/header";
 @import "./blocks/publicity";
 @import "./blocks/training";
 @import "./blocks/mobile-nav";
@@ -22,9 +23,6 @@
 @import "./components/button-modal";
 @import "./components/button-enter";
 @import "./components/training-card";
-
-/* Layout */
-@import "layout/header";
 
 /* Pages */
 @import "pages/home";

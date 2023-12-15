@@ -12,7 +12,6 @@
 }
 
 .container-right {
-	/* overflow-x: hidden; */
 	padding-left: calc((100% - $container-width) / 2 + $container-padding);
 
 	@include tablet {
@@ -21,7 +20,6 @@
 }
 
 .container-left {
-	/* overflow-x: hidden; */
 	padding-right: calc((100% - $container-width) / 2 + $container-padding);
 
 	@include tablet {

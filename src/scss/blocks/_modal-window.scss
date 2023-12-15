@@ -1,6 +1,6 @@
 /* Стили контейнера модального окна */
 .modal-container {
-	display: none; /* Изначально скрываем модальное окно */
+	display: none; 
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -20,14 +20,13 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
 	padding: 3rem 3rem;
 	border-radius: 30px;
 	background: $color-background-modal;
 	max-width: 42rem;
 	width: 95%;
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
 	padding-top: 4rem;
 	border: 0;
 	box-shadow: $modal-shadow;
@@ -60,6 +59,7 @@
 		font-weight: 700;
 		line-height: 105%;
 		letter-spacing: -0.08rem;
+		margin-bottom: 1.5rem;
 		@include tablet {
 			text-align: start;
 		}
@@ -73,6 +73,7 @@
 		color: $color-white;
 		font-size: $font-size-paragraph;
 		line-height: 120%;
+		margin-bottom: 2.1rem;
 		@include tablet {
 			text-align: start;
 		}
@@ -92,6 +93,7 @@
 		color: $color-input;
 		font-size: 18px;
 		width: 85%;
+		margin-bottom: 1.1rem;
 		@include mobile {
 			width: 100%;
 		}

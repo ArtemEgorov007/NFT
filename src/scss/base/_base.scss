@@ -15,14 +15,14 @@ html {
 	}
 
 	@include tablet {
-		font-size: 90%;
-	}
-
-	@include mobile {
 		font-size: 86%;
 	}
 
+	@include mobile {
+		font-size: 80%;
+	}
+
 	@include mini-mobile {
-		font-size: 70%;
+		font-size: 60%;
 	}
 }
