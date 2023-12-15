@@ -29,14 +29,14 @@
 	&:hover {
 		transform: translateY(-0.1rem);
 
-		&::after {
-			transform: scaleX(0.97) scaleY(0.97);
-		}
+		// &::after {
+		// 	transform: scaleX(0.97) scaleY(0.97);
+		// }
 	}
 
 	&:active {
-		transform: translateY(-0.3rem);
-		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35) inset;
+		transform: translateY(-0.5rem);
+		// box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35) inset;
 	}
 
 	&::after {
@@ -112,14 +112,14 @@
 	&:hover {
 		transform: translateY(-0.1rem);
 
-		&::after {
-			transform: scaleX(0.97) scaleY(0.97);
-		}
+		// &::after {
+		// 	transform: scaleX(0.97) scaleY(0.97);
+		// }
 	}
 
 	&:active {
 		transform: translateY(-0.3rem);
-		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35) inset;
+		// box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35) inset;
 	}
 
 	&::after {

@@ -51,11 +51,10 @@
 
 .mobile-nav--open {
 	transform: translate(0%, 0%);
-	overflow: hidden;
 }
 
 .no-scroll {
-	overflow: hidden;
+	overflow: hidden !important;
 }
 
 .mobile-nav__btn {
@@ -75,7 +74,7 @@
 
 .mobile-nav__list {
 	font-size: 22px;
-	margin-bottom: 3rem;
+	margin-bottom: 4rem;
 
 	@media (max-width: 767px) {
 		font-size: 18px;
