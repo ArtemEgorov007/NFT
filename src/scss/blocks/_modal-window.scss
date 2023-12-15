@@ -1,9 +1,10 @@
 /* Стили контейнера модального окна */
 .modal-container {
-	display: none; 
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
+	overflow: hidden;
 	width: 100%;
 	height: 100%;
 	background: rgba(48, 9, 97, 0.3);
