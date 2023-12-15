@@ -1,4 +1,4 @@
-.btn {
+.button-modal {
 	&,
 	&:link,
 	&:visited {
@@ -30,7 +30,7 @@
 		transform: translateY(-0.1rem);
 
 		&::after {
-			transform: scaleX(1.1) scaleY(1.1);
+			transform: scaleX(0.97) scaleY(0.97);
 		}
 	}
 
@@ -77,7 +77,7 @@
 	}
 }
 
-.btn-modal {
+.button-open {
 	&,
 	&:link,
 	&:visited {
@@ -113,7 +113,7 @@
 		transform: translateY(-0.1rem);
 
 		&::after {
-			transform: scaleX(1) scaleY(1);
+			transform: scaleX(0.97) scaleY(0.97);
 		}
 	}
 

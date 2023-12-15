@@ -1,11 +1,11 @@
 .section-publicity {
-	padding-top: 18rem;
-	min-height: 70.3rem;
-	margin-bottom: 12rem;
+	padding-top: 15rem;
+	min-height: 65.3rem;
+	margin-bottom: 15rem;
 	background: url("../img/main/background-header.png") center / cover no-repeat;
 
 	@include tablet {
-		margin-bottom: 13rem;
+		margin-bottom: 15rem;
 	}
 
 	@include mobile {
@@ -24,4 +24,8 @@
 	@include mobile {
 		margin-bottom: 20rem;
 	}
+}
+
+.btn_open-modal {
+	margin-bottom: 5rem;
 }

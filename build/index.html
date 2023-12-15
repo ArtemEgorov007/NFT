@@ -14,10 +14,13 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
 		<link rel="manifest" href="./img/favicon/site.webmanifest" />
+
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
 	</head>
 
 	<body class="body__page">
-		<!-- Header -->
+	
 		<header class="header">
 	<img src="./img/main/ellipse-header.png" alt="ellipse/" class="header__ellipse" />
 
@@ -29,7 +32,6 @@
 				</a>
 			</div>
 
-			
 			<div id="mobileNavOverlay" class="mobile-nav-overlay"></div>
 
 <div id="modalOpen" class="menu-icon">
@@ -46,7 +48,7 @@
 		<li><a href="#training">Что даст обучение</a></li>
 	</ul>
 
-	<a href="#!" class="btn-text">Личный кабинет</a>
+	<a href="#!" class="button-enter">Личный кабинет</a>
 </div>
 
 
@@ -56,7 +58,7 @@
 					<li class="nav__item"><a href="#training" class="nav__link">Что даст обучение</a></li>
 				</ul>
 
-				<a href="#!" class="btn-text">Личный кабинет</a>
+				<a href="#!" class="button-enter">Личный кабинет</a>
 			</div>
 		</nav>
 	</div>
@@ -64,7 +66,7 @@
 
 
 		<main class="main__page">
-			<!-- Главная -->
+			
 			<section id="publicity" class="section-publicity">
 	<div class="section-publicity__container container flex">
 		<div class="section-publicity__content">
@@ -75,7 +77,9 @@
 
 			<picture class="section-publicity__composition-main">
 				<source media="(max-width: 500px)" srcset="img/main/man-small.png" />
+
 				<source srcset="img/main/man-small.png" />
+
 				<img src="img/main/man-small.png" alt="Адаптивное изображение" />
 			</picture>
 
@@ -84,35 +88,12 @@
 				на NFT всего за 28 дней!
 			</p>
 
-			<!-- <button class="section-publicity__button margin-bottom-30px btn" onclick="window.dialog.showModal();">Начать зарабатывать на NFT</button>
-			<dialog class="modal" id="dialog">
-	<h2 class="modal__title margin-bottom-20px">Начни прямо сейчас!</h2>
+			<button id="openModalBtn" class="btn_open-modal button-modal">Начать зарабатывать на NFT</button>
 
-	<p class="modal__text margin-bottom-20px">
-		Получи все нужные навыки для заработка <br />
-		на NFT всего за 28 дней!
-	</p>
-
-	<img src="img/main/background-modal.png" alt="background" class="modal__background" />
-
-	<input type="email" autocomplete="off" class="modal__input margin-bottom-20px" />
-
-	<a href="#" class="modal__button btn-modal">Оплатить</a>
-
-	<button onclick="window.dialog.close();" aria-label="close" class="modal__x">
-		<img src="./img/icons/close.svg" alt="exit" class="modal__icon" />
-	</button>
-</dialog>
- -->
-
-			<!-- Кнопка для открытия модального окна -->
-<button id="openModalBtn" class="btn btn_open-modal">Начать зарабатывать на NFT</button>
-
-<!-- Контейнер модального окна -->
 <div id="modalContainer" class="modal-container">
-	<!-- Содержимое модального окна -->
 	<div class="modal-content">
 		<img id="closeModalBtn" src="./img/icons/close.svg" alt="exit" class="modal-content__icon" />
+
 		<img src="img/main/background-modal.png" alt="background" class="modal-content__background" />
 
 		<h2 class="modal-content__title">Начни прямо сейчас!</h2>
@@ -122,10 +103,9 @@
 			на NFT всего за 28 дней!
 		</p>
 
-		<input type="email" autocomplete="off" class="modal-content__input" />
+		<input type="email" autocomplete="off" placeholder="Ваш email" class="modal-content__input" />
 
-		<!-- Кнопка для закрытия модального окна -->
-		<button class="btn-modal closeModalBtn modal-content__button">Оплатить</button>
+		<button class="closeModalBtn modal-content__button button-open">Оплатить</button>
 	</div>
 </div>
 
@@ -133,24 +113,28 @@
 
 		<picture class="section-publicity__composition">
 			<source media="(max-width: 1000px)" srcset="img/main/man-full.png" />
+
 			<source srcset="img/main/man-full.png" />
+
 			<img src="img/main/man-full.png" alt="Адаптивное изображение" />
 		</picture>
 	</div>
 </section>
 
 
-			<!-- Обучение -->
 			<section id="training" class="section-training reveal">
 	<div class="section-training__container container">
 		<img src="./img/main/ellipse-top.png" alt="background" class="section-training__top" />
+
 		<img src="./img/main/ellipse-bottom.png" alt="background" class="section-training__bottom" />
+
 		<h3 class="section-training__title">Что даст тебе обучение?</h3>
 
-        <img src="./img/main/ellipse-purple.png" alt="ellipse" class="section-training__purple" />
-        <img src="./img/main/ellipse-blue.png" alt="ellipse" class="section-training__blue" />
-        <img src="./img/main/ellipse-muddy.png" alt="ellipse" class="section-training__muddy" />
-        
+		<img src="./img/main/ellipse-purple.png" alt="ellipse" class="section-training__purple" />
+
+		<img src="./img/main/ellipse-blue.png" alt="ellipse" class="section-training__blue" />
+
+		<img src="./img/main/ellipse-muddy.png" alt="ellipse" class="section-training__muddy" />
 
 		<div class="section-training__content grid-card">
 			<div class="training-card">
@@ -184,6 +168,7 @@
 		</div>
 	</div>
 </section>
+
 		</main>
 
 		<script src="./js/index.bundle.js"></script>

@@ -28,21 +28,24 @@
 
 .nav {
 	justify-content: space-between;
+
 	&__buttons {
 		margin-left: auto;
 		@include tablet {
 			display: none;
 		}
 	}
+
 	&__list {
 		gap: 6.5rem;
 		margin-right: 9.3rem;
 		align-items: center;
 	}
+
 	&__link {
 		color: $color-header;
 		font-size: $font-size-paragraph;
 		font-weight: 400;
-		line-height: 120%; /* 27.6px */
+		line-height: 120%;
 	}
 }

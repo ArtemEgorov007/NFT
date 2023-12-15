@@ -19,14 +19,12 @@
 @import "./blocks/modal-window";
 
 /* Components */
-@import "./components/button";
-@import "./components/button-text";
+@import "./components/button-modal";
+@import "./components/button-enter";
 @import "./components/training-card";
 
 /* Layout */
 @import "layout/header";
-@import "layout/navigation";
-@import "layout/modal";
 
 /* Pages */
 @import "pages/home";

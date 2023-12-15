@@ -14,16 +14,6 @@
 		z-index: 10;
 	}
 
-	&__ellipse {
-		position: absolute;
-		width: 5rem;
-		top: -2rem;
-		left: 31rem;
-		@include tablet {
-			display: none;
-		}
-	}
-
 	&__title {
 		color: $color-white;
 		font-size: $font-size-paragraph-h1;
@@ -32,7 +22,7 @@
 		max-width: 44.8rem;
 		@include mobile {
 			letter-spacing: -0.75px;
-			font-size: 2rem;
+			font-size: 2.5rem;
 		}
 	}
 
@@ -42,6 +32,9 @@
 		font-style: normal;
 		margin-bottom: 4rem;
 		line-height: 120%;
+		@include mobile {
+			font-size: 2rem;
+		}
 	}
 
 	&__text-highlight {
