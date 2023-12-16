@@ -2,8 +2,8 @@
 	opacity: 0;
 	z-index: 99;
 	position: absolute;
-	left: 0px;
-	top: -25px;
+	left: 0;
+	top: -1.5rem;
 	width: 100%;
 	height: 100vh;
 	background: rgba(48, 9, 97, 0.3);
@@ -26,8 +26,6 @@
 	right: 0;
 	transform: translate(100%, 0%);
 
-	height: 492px;
-	width: 490px;
 	padding: 8rem 60px 40px;
 	border-radius: 0px 0px 0px 30px;
 	background: #293344;
@@ -38,10 +36,21 @@
 		color: #cecece;
 	}
 
-	@media (max-width: 767px) {
-		width: 304px;
-		padding: 12rem 30px 0;
+	@include tablet {
+		max-width: 304px;
+		width: 100%;
+		padding: 8rem 3rem 0;
 		height: 392px;
+		&__button {
+			margin-top: 2rem;
+		}
+	}
+
+	@include mini-mobile {
+		padding: 12rem 3rem 0;
+		&__button {
+			margin-top: 5rem;
+		}
 	}
 
 	@media (max-width: 280px) {
@@ -77,7 +86,7 @@
 	margin-bottom: 3rem;
 
 	@media (max-width: 767px) {
-		font-size: 18px;
+		// font-size: 18px;
 	}
 
 	a {

@@ -8,21 +8,21 @@
 
 html {
 	scroll-behavior: smooth;
-	font-size: 100%;
+	font-size: 95%;
 
 	@include big-desktop {
-		font-size: 96.25%;
+		font-size: 91.25%;
 	}
 
 	@include tablet {
-		font-size: 86%;
+		font-size: 81%;
 	}
 
 	@include mobile {
-		font-size: 80%;
+		font-size: 75%;
 	}
 
 	@include mini-mobile {
-		font-size: 60%;
+		font-size: 58%;
 	}
 }

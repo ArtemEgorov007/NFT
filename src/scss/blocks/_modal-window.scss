@@ -1,4 +1,3 @@
-/* Стили контейнера модального окна */
 .modal-container {
 	display: none;
 	position: fixed;
@@ -15,7 +14,6 @@
 	justify-content: center;
 }
 
-/* Стили содержимого модального окна */
 .modal-content {
 	position: fixed;
 	top: 50%;
@@ -45,9 +43,9 @@
 	&__background {
 		position: absolute;
 		top: 0;
-		left: 38%;
+		left: 33.4%;
 		z-index: -1;
-		width: 26rem;
+		width: 28rem;
 		border-radius: 29px;
 		@include mobile {
 			display: none;
