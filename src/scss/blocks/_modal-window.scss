@@ -78,7 +78,18 @@
 			text-align: start;
 		}
 		@include mobile {
-			font-size: 1.6rem;
+			display: none;
+
+			&-mini {
+				display: block;
+				color: $color-white;
+				font-size: $font-size-paragraph;
+				line-height: 120%;
+				margin-bottom: 2.1rem;
+				max-width: 28.7rem;
+				text-align: start;
+				font-size: 1.8rem;
+			}
 		}
 	}
 
@@ -91,7 +102,7 @@
 		border-radius: 10px;
 		background: $color-white;
 		color: $color-input;
-		font-size: 1rem;
+		font-size: 1.6rem;
 		width: 85%;
 		margin-bottom: 1.1rem;
 		@include mobile {
